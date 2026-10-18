@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tupa Alpargatas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Alpargatas de Sauce, Corrientes, con mucho confort y calidad. Muchos modelos, talles del 35 al 44. Armá tu pedido, también por mayor, y envialo por WhatsApp.">
+<meta name="theme-color" content="#2F4A3A">
+<!-- Vista previa al compartir el link (WhatsApp, Instagram, Facebook).
+     Si el sitio queda en otra dirección, cambiá tupa-alpargatas.vercel.app por la real. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tupa Alpargatas">
+<meta property="og:title" content="Tupa Alpargatas">
+<meta property="og:description" content="Muchos modelos. Alpargatas de Sauce, Corrientes, con mucho confort y calidad. Talles del 35 al 44. Pedidos minoristas y por mayor por WhatsApp.">
+<meta property="og:image" content="https://tupa-alpargatas.vercel.app/tupa-logo.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:url" content="https://tupa-alpargatas.vercel.app/">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F4A3A'/%3E%3Crect x='12' y='40' width='40' height='4' fill='%23F6EBD8'/%3E%3Crect x='12' y='46' width='40' height='4' fill='%23C9A46B'/%3E%3Crect x='12' y='52' width='40' height='4' fill='%23A8432A'/%3E%3Ctext x='32' y='37' font-family='Arial Black,Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23F6EBD8'%3Et%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Chivo+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: bandas a todo el ancho (verde / crema) separadas por franjas de lona; contenido en un wrap centrado; carrito como panel lateral. */
+:root{
+  --verde:#2F4A3A;
+  --crema:#F6EBD8;
+  --ocre:#C9A46B;
+  --terracota:#A8432A;
+  --tinta:#2A1E16;
+  --linea:rgba(42,30,22,.16);
+  --panel:rgba(201,164,107,.22);
+  --crema-suave:rgba(246,235,216,.72);
+  --tinta-suave:rgba(42,30,22,.72);
+  --font:"Chivo","Arial Black","Helvetica Neue",Arial,sans-serif;
+  --mono:"Chivo Mono","Courier New",ui-monospace,monospace;
+  --radio:18px;
+  --wrap:1160px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--crema);color:var(--tinta);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--verde)}
+h1,h2,h3{font-weight:900;letter-spacing:-.035em;line-height:.95;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font-family:var(--font)}
+:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+section[id]{scroll-margin-top:118px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Logo ---------- */
+.logo{--s:40px;display:inline-flex;flex-direction:column;align-items:stretch;color:var(--crema);text-decoration:none;line-height:1}
+.logo-word{font-weight:900;font-size:var(--s);letter-spacing:-.045em;line-height:.74;padding-right:.04em;position:relative;z-index:1}
+.logo-stripes{display:grid;gap:calc(var(--s)*.07);margin-top:calc(var(--s)*.07)}
+.logo-stripes i{display:block;height:calc(var(--s)*.085)}
+.logo-stripes i:nth-child(1),.logo-stripes i:nth-child(4){background:var(--crema)}
+.logo-stripes i:nth-child(2){background:var(--ocre)}
+.logo-stripes i:nth-child(3){background:var(--terracota)}
+.logo-sub{font-weight:700;font-size:calc(var(--s)*.2);letter-spacing:.42em;margin-right:-.42em;text-align:center;margin-top:calc(var(--s)*.2)}
+
+/* ---------- Franja ---------- */
+.franja{background:var(--verde);padding-block:10px;display:grid;gap:5px}
+.franja i{display:block;height:7px}
+.franja i:nth-child(1),.franja i:nth-child(4){background:var(--crema)}
+.franja i:nth-child(2){background:var(--ocre)}
+.franja i:nth-child(3){background:var(--terracota)}
+
+/* ---------- Botones ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;border:2px solid transparent;font:700 16px/1.2 var(--font);padding:14px 24px;text-decoration:none;cursor:pointer;transition:background-color .15s,color .15s,transform .15s;text-align:center}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn--terracota{background:var(--terracota);color:var(--crema)}
+.btn--terracota:hover{background:var(--tinta)}
+.hero .btn--terracota:hover{background:var(--crema);color:var(--terracota)}
+.btn--verde{background:var(--verde);color:var(--crema)}
+.btn--verde:hover{background:var(--terracota)}
+.btn--borde{border-color:var(--crema);color:var(--crema);background:transparent}
+.btn--borde:hover{background:var(--crema);color:var(--verde)}
+.btn--borde-verde{border-color:var(--verde);color:var(--verde);background:transparent}
+.btn--borde-verde:hover{background:var(--verde);color:var(--crema)}
+.btn--chico{font-size:14px;padding:11px 14px;gap:8px}
+.btn--chico svg{width:17px;height:17px}
+.btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.link{background:none;border:0;padding:0;font:700 14px var(--font);color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--verde);color:var(--crema);border-bottom:1px solid rgba(246,235,216,.14)}
+.header-in{display:grid;grid-template-columns:auto 1fr auto auto;grid-template-areas:"logo . carro cta" "nav nav nav nav";align-items:center;gap:10px 10px;padding-block:12px 10px}
+.header-in .logo{grid-area:logo;--s:30px}
+.header-in .btn--terracota{grid-area:cta;font-size:14px;padding:10px 16px}
+.btn-carrito{grid-area:carro;position:relative;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px;border-radius:999px;border:2px solid rgba(246,235,216,.5);background:transparent;color:var(--crema);font:700 14px var(--font);cursor:pointer}
+.btn-carrito:hover{border-color:var(--crema)}
+.btn-carrito svg{width:20px;height:20px}
+.btn-carrito .badge{min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--ocre);color:var(--tinta);font-size:12px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.btn-carrito .txt{display:none}
+.btn-carrito.salto{animation:salto .4s}
+@keyframes salto{40%{transform:scale(1.12)}}
+.nav{grid-area:nav;min-width:0}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-weight:700;font-size:14px;text-decoration:none;color:var(--crema-suave);padding-block:4px;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--crema);border-bottom-color:var(--ocre)}
+@media (min-width:860px){
+  .header-in{grid-template-areas:"logo nav carro cta";padding-block:14px;gap:12px}
+  .header-in .logo{--s:36px}
+  .nav ul{justify-content:center;gap:28px}
+  .nav a{font-size:15px}
+  .header-in .btn--terracota{font-size:15px;padding:12px 20px}
+  .btn-carrito .txt{display:inline}
+}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--verde);color:var(--crema)}
+.hero-in{display:grid;gap:28px;align-items:center;padding-block:36px 48px}
+.hero .eyebrow{color:var(--ocre)}
+.hero h1{font-size:clamp(3.4rem,15vw,7.6rem);letter-spacing:-.05em;line-height:.86;margin-top:14px}
+.hero-bajada{font-size:clamp(1.05rem,3.6vw,1.3rem);max-width:30ch;margin-top:20px}
+.hero-acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-datos{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding:0;list-style:none;font-size:14px;font-weight:700;color:var(--crema-suave)}
+.hero-datos li{display:flex;align-items:center;gap:8px}
+.hero-datos li::before{content:"";width:14px;height:4px;background:var(--ocre);border-radius:2px}
+.hero-media{position:relative;max-width:560px;width:100%;justify-self:center}
+.hero-disco{aspect-ratio:1;max-width:100%;border-radius:50%;background:var(--crema);display:grid;place-items:center;overflow:hidden}
+.hero-disco img{width:100%;height:100%;object-fit:cover}
+.hero-disco svg{width:92%;height:auto;margin-top:6%}
+.hero-sello{position:absolute;left:0;bottom:6%;background:var(--terracota);color:var(--crema);border-radius:999px;padding:10px 18px;font-weight:900;font-size:15px;border:3px solid var(--verde)}
+@media (min-width:860px){.hero-in{grid-template-columns:1.1fr 1fr;padding-block:64px 80px;gap:48px}}
+
+/* ---------- Secciones ---------- */
+.seccion{padding-block:56px}
+.seccion-cabeza{display:grid;gap:12px;margin-bottom:28px}
+.seccion-cabeza .eyebrow{color:var(--terracota)}
+.seccion h2{font-size:clamp(2.4rem,9vw,4.2rem);color:var(--verde)}
+.seccion-cabeza p{max-width:52ch;font-size:17px}
+
+/* ---------- Catálogo ---------- */
+.filtros{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--verde);background:transparent;color:var(--verde);border-radius:999px;padding:9px 16px;font:700 15px/1.1 var(--font);cursor:pointer;transition:background-color .15s,color .15s}
+.pill:hover{background:rgba(47,74,58,.1)}
+.pill[aria-pressed="true"]{background:var(--verde);color:var(--crema)}
+.pill .n{font-size:12px;opacity:.7;font-variant-numeric:tabular-nums}
+.contador{font-size:14px;margin-top:14px;color:var(--tinta-suave)}
+.grilla{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
+@media (min-width:760px){.grilla{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
+@media (min-width:1080px){.grilla{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}}
+.card{display:flex;flex-direction:column;border:1px solid var(--linea);border-radius:var(--radio);background:var(--crema);min-width:0;transition:transform .2s}
+@media (hover:hover){.card:hover{transform:translateY(-3px)}}
+.card-media{aspect-ratio:1;max-width:100%;background:var(--panel);display:grid;place-items:center;overflow:hidden;border-radius:calc(var(--radio) - 1px) calc(var(--radio) - 1px) 0 0}
+.card-media img{width:100%;height:100%;object-fit:cover;display:block}
+.card-media svg{width:96%;height:auto}
+.card-body{display:flex;flex-direction:column;gap:8px;padding:14px;flex:1;min-width:0}
+.tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.tag--rayadas{background:var(--terracota);color:var(--crema)}
+.tag--combinadas{background:var(--ocre);color:var(--tinta)}
+.tag--cuadrille{background:var(--verde);color:var(--crema)}
+.tag--clasica{background:var(--tinta);color:var(--crema)}
+.card h3{font-size:clamp(1.15rem,4.2vw,1.4rem);letter-spacing:-.025em;line-height:1.05}
+.precio{font-size:15px;font-weight:700;color:var(--verde);font-variant-numeric:tabular-nums}
+.precio--consultar{font-weight:400;color:var(--tinta-suave)}
+.campo-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-suave)}
+.colores{display:grid;gap:6px}
+.colores-lista{display:flex;flex-wrap:wrap;gap:8px}
+.swatch{width:30px;height:30px;border-radius:50%;border:2px solid var(--crema);box-shadow:0 0 0 1.5px var(--linea);cursor:pointer;padding:0}
+.swatch[aria-pressed="true"]{box-shadow:0 0 0 2.5px var(--verde)}
+.color-nombre{font-size:13px;color:var(--tinta-suave)}
+.talle{display:grid;gap:4px;margin-top:auto;padding-top:4px}
+.select{appearance:none;-webkit-appearance:none;width:100%;font:700 15px var(--font);color:var(--tinta);background:var(--crema) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%232A1E16' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center/12px 8px;border:1.5px solid rgba(42,30,22,.3);border-radius:999px;padding:10px 34px 10px 14px;cursor:pointer}
+.select:hover{border-color:var(--verde)}
+.select.error{border-color:var(--terracota);box-shadow:0 0 0 2px var(--terracota)}
+.aviso{font-size:13px;font-weight:700;color:var(--terracota);min-height:0}
+.card .btn{width:100%}
+.directo{font-size:13px;text-align:center;color:var(--tinta-suave)}
+.directo a{font-weight:700;color:var(--verde)}
+.vacio{grid-column:1/-1;padding:32px;border:1.5px dashed var(--linea);border-radius:var(--radio);text-align:center}
+@media (max-width:420px){.solo-ancho{display:none}}
+
+/* ---------- Guía de compra ---------- */
+.num-paso{display:inline-grid;place-items:center;flex:none;width:20px;height:20px;border-radius:50%;background:var(--verde);color:var(--crema);font-size:11px;font-weight:900;letter-spacing:0;line-height:1;font-variant-numeric:tabular-nums}
+.btn .num-paso{background:var(--crema);color:var(--verde);width:21px;height:21px}
+.btn--terracota .num-paso{color:var(--terracota)}
+.label-paso{display:flex;align-items:center;gap:7px}
+.guia{margin-top:22px;border:1.5px solid var(--linea);border-radius:20px;padding:18px 14px 14px;display:grid;gap:14px}
+.guia ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.guia li{position:relative;display:grid;justify-items:center;align-content:start;text-align:center;gap:8px;font-size:13px;font-weight:700;line-height:1.25;color:var(--tinta-suave)}
+.guia li:not(:last-child)::after{content:"";position:absolute;top:17px;left:calc(50% + 26px);right:calc(-50% + 26px);height:3px;border-radius:2px;background:var(--linea)}
+.guia li.hecho::after{background:var(--verde)}
+.guia-num{position:relative;z-index:1;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:15px;border:2px solid rgba(42,30,22,.28);background:var(--crema);color:var(--tinta-suave);transition:background-color .2s,box-shadow .2s}
+.guia-num svg{width:18px;height:18px}
+.guia li.activo{color:var(--tinta)}
+.guia li.activo .guia-num{background:var(--terracota);border-color:var(--terracota);color:var(--crema);box-shadow:0 0 0 5px rgba(168,67,42,.18)}
+.guia li.hecho{color:var(--verde)}
+.guia li.hecho .guia-num{background:var(--verde);border-color:var(--verde);color:var(--crema)}
+.guia-estado{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;background:var(--panel);border-radius:14px;padding:12px 14px;font-size:15px}
+.guia-estado p{min-width:0;flex:1 1 220px}
+.guia-estado a{font-weight:700;color:var(--verde)}
+@media (min-width:760px){.guia{padding:22px 24px 18px}.guia li{font-size:15px}}
+.en-carrito{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;border:0;cursor:pointer;font:700 12.5px/1.25 var(--font);color:var(--verde);background:rgba(47,74,58,.1);border-radius:999px;padding:7px 10px;text-align:center}
+.en-carrito:hover{background:rgba(47,74,58,.18)}
+.en-carrito svg{width:15px;height:15px;flex:none}
+.en-carrito .link{font-size:13px;color:var(--verde)}
+.card .btn.agregado{background:var(--terracota)}
+.select.error{animation:sacudir .35s}
+@keyframes sacudir{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+
+/* ---------- Globitos de ayuda ---------- */
+.ancla{position:relative}
+.globo{--tx:-50%;position:absolute;left:50%;z-index:6;transform:translateX(var(--tx));width:max-content;max-width:max(100%,170px);background:var(--terracota);color:var(--crema);font-size:13px;font-weight:700;line-height:1.3;letter-spacing:0;text-transform:none;text-align:center;padding:8px 12px;border-radius:12px;box-shadow:0 6px 16px rgba(42,30,22,.3);pointer-events:none;animation:flotar 1.8s ease-in-out infinite}
+.globo::after{content:"";position:absolute;left:50%;margin-left:-7px;border:7px solid transparent}
+.globo--arriba{bottom:calc(100% + 10px)}
+.globo--arriba::after{top:100%;border-top-color:var(--terracota)}
+.globo--abajo{top:calc(100% + 10px)}
+.globo--abajo::after{bottom:100%;border-bottom-color:var(--terracota)}
+.globo--der{--tx:0;left:auto;right:0}
+.globo--der::after{left:auto;right:30px;margin-left:0}
+@keyframes flotar{50%{transform:translateX(var(--tx)) translateY(-4px)}}
+.guia-pie{display:flex;justify-content:flex-end}
+.guia-pie .link{font-weight:700;font-size:13px;color:var(--tinta-suave)}
+
+/* ---------- Ticket del pedido ---------- */
+.ticket-marco{background:var(--verde);border-radius:16px;padding:16px 16px 20px;display:grid;gap:12px}
+.ticket-titulo{color:var(--crema);font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px}
+.ticket-titulo svg{width:18px;height:18px;color:var(--ocre)}
+.ticket{--d:7px;background:var(--crema);color:var(--tinta);font-family:var(--mono);font-size:13px;line-height:1.5;padding:22px 18px 18px;display:grid;gap:2px;font-variant-numeric:tabular-nums;
+  -webkit-mask:radial-gradient(circle at 8px 0,transparent var(--d),#000 calc(var(--d) + .5px)) top left/16px 51% repeat-x,radial-gradient(circle at 8px 100%,transparent var(--d),#000 calc(var(--d) + .5px)) bottom left/16px 51% repeat-x;
+  mask:radial-gradient(circle at 8px 0,transparent var(--d),#000 calc(var(--d) + .5px)) top left/16px 51% repeat-x,radial-gradient(circle at 8px 100%,transparent var(--d),#000 calc(var(--d) + .5px)) bottom left/16px 51% repeat-x}
+.t-cab{display:grid;justify-items:center;gap:4px;text-align:center;padding-bottom:6px}
+.t-logo{font-family:var(--font);font-weight:900;font-size:30px;letter-spacing:-.045em;line-height:.8;color:var(--verde)}
+.t-franja{display:grid;gap:2px;width:64px}
+.t-franja i{display:block;height:3px}
+.t-franja i:nth-child(1){background:var(--verde)}
+.t-franja i:nth-child(2){background:var(--ocre)}
+.t-franja i:nth-child(3){background:var(--terracota)}
+.t-cab small{font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.t-sep{border-top:1.5px dashed rgba(42,30,22,.45);margin:8px 0}
+.t-fila{display:flex;align-items:baseline;gap:6px;min-width:0}
+.t-fila .l{flex:none}
+.t-fila .r{flex:none;text-align:right;font-weight:700}
+.t-fila .p{flex:1;min-width:12px;border-bottom:1.5px dotted rgba(42,30,22,.4);transform:translateY(-4px)}
+.t-modelo{font-weight:700;text-transform:uppercase;margin-top:6px;overflow-wrap:anywhere}
+.t-sangria{padding-left:14px}
+.t-total{font-size:16px;font-weight:700}
+.t-total .r{color:var(--terracota)}
+.t-pie{text-align:center;font-size:11.5px;color:var(--tinta-suave);margin-top:4px}
+.t-tipo{justify-self:center;font-weight:700;font-size:11px;letter-spacing:.14em;padding:3px 10px;border:1.5px solid currentColor;border-radius:999px;margin-top:2px}
+.t-tipo--mayor{color:var(--terracota)}
+
+/* ---------- Barra de pedido ---------- */
+.barra-pedido{position:fixed;z-index:36;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--verde);color:var(--crema);border-top:3px solid var(--ocre);box-shadow:0 -6px 20px rgba(42,30,22,.25);padding-top:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.barra-pedido strong{display:block;font-size:18px;font-weight:900;letter-spacing:-.02em;line-height:1.1}
+.barra-pedido span{font-size:13px;color:var(--crema-suave)}
+.barra-pedido .btn{padding:12px 18px;font-size:15px;flex:none}
+body.tiene-pedido .wa-flotante{display:none}
+body.tiene-pedido .toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
+@media (min-width:760px){body.tiene-pedido .toast{bottom:calc(24px + env(safe-area-inset-bottom,0px))}}
+body.tiene-pedido .espacio-flotante{height:90px}
+@media (min-width:760px){
+  .barra-pedido{left:auto;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));border:2px solid var(--crema);border-radius:999px;padding:10px 10px 10px 24px;gap:20px;box-shadow:0 10px 26px rgba(42,30,22,.35)}
+}
+
+/* ---------- Por mayor ---------- */
+.mayor{background:var(--verde);color:var(--crema)}
+.mayor .seccion-cabeza .eyebrow{color:var(--ocre)}
+.mayor h2{color:var(--crema)}
+.mayor-in{display:grid;gap:28px;align-items:start}
+.mayor-puntos{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:10px;font-size:16px}
+.mayor-puntos li{display:flex;gap:12px;align-items:baseline}
+.mayor-puntos li::before{content:"";flex:none;width:14px;height:4px;background:var(--ocre);border-radius:2px;transform:translateY(-4px)}
+.armador{background:var(--crema);color:var(--tinta);border-radius:22px;padding:20px;display:grid;gap:16px;min-width:0}
+.armador-cabeza{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center}
+.armador-mini{aspect-ratio:1;border-radius:14px;background:var(--panel);display:grid;place-items:center;overflow:hidden}
+.armador-mini svg{width:100%;height:auto}
+.armador-mini img{width:100%;height:100%;object-fit:cover}
+.campo{display:grid;gap:6px;min-width:0}
+.curva{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.curva label{display:grid;gap:4px;text-align:center}
+.curva span{font-weight:900;font-size:15px;color:var(--verde);font-variant-numeric:tabular-nums}
+.num{width:100%;font:700 17px var(--font);text-align:center;color:var(--tinta);background:var(--crema);border:1.5px solid rgba(42,30,22,.3);border-radius:12px;padding:10px 4px;font-variant-numeric:tabular-nums;-moz-appearance:textfield}
+.num::-webkit-outer-spin-button,.num::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.num:focus{border-color:var(--verde)}
+.num.lleno{background:var(--verde);color:var(--crema);border-color:var(--verde)}
+.armador-atajos{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.armador-pie{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-top:1px solid var(--linea);padding-top:16px}
+.armador-total{font-weight:900;font-size:1.3rem;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.armador-total small{display:block;font-weight:400;font-size:13px;letter-spacing:0;color:var(--tinta-suave)}
+@media (min-width:900px){.mayor-in{grid-template-columns:1fr 1.15fr;gap:56px}.curva{grid-template-columns:repeat(10,minmax(0,1fr))}.armador{padding:28px}}
+
+/* ---------- Talles ---------- */
+.talles-in{display:grid;gap:28px;align-items:center}
+.talles-in .btn{justify-self:start;margin-top:8px}
+.cajas{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;list-style:none;margin:0;padding:0}
+.cajas a{aspect-ratio:1;max-width:100%;display:grid;place-items:center;background:var(--verde);color:var(--crema);border-radius:14px;font-weight:900;font-size:clamp(1.4rem,6vw,2.1rem);letter-spacing:-.03em;text-decoration:none;font-variant-numeric:tabular-nums;transition:background-color .15s}
+.cajas a:hover{background:var(--terracota)}
+@media (min-width:900px){.talles-in{grid-template-columns:1fr 1.25fr;gap:56px}}
+
+/* ---------- Cómo comprar ---------- */
+.pasos{list-style:none;margin:0;padding:0;display:grid;gap:28px}
+.paso{border-top:3px solid var(--verde);padding-top:18px;display:grid;gap:10px;align-content:start}
+.paso-num{font-weight:900;font-size:3.4rem;line-height:.9;letter-spacing:-.05em;color:var(--terracota);font-variant-numeric:tabular-nums}
+.paso h3{font-size:1.6rem;color:var(--verde)}
+.paso p{max-width:34ch}
+@media (min-width:820px){.pasos{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--verde);color:var(--crema)}
+.footer-in{display:grid;gap:32px;padding-block:52px 36px}
+.footer-in .logo{--s:64px;justify-self:start}
+.footer-col{display:grid;gap:6px;align-content:start}
+.footer-col .eyebrow{color:var(--ocre)}
+.footer-col a{font-size:20px;font-weight:700;text-decoration:none}
+.footer-col a:hover{text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:4px}
+.footer-col small{font-size:14px;color:var(--crema-suave)}
+.footer-base{font-size:13px;color:var(--crema-suave);padding-block:0 22px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+@media (min-width:760px){.footer-in{grid-template-columns:1.4fr 1fr 1fr;align-items:start}}
+
+/* ---------- WhatsApp flotante ---------- */
+.wa-flotante{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:35;display:inline-flex;align-items:center;gap:10px;height:58px;min-width:58px;padding:0 17px;justify-content:center;border-radius:999px;background:var(--terracota);color:var(--crema);text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 8px 22px rgba(42,30,22,.32);border:2px solid var(--crema);transition:transform .15s}
+.wa-flotante:hover{transform:scale(1.05)}
+.wa-flotante svg{width:26px;height:26px;flex:none}
+.wa-flotante span{display:none}
+@media (min-width:760px){.wa-flotante span{display:inline}.wa-flotante{padding:0 22px 0 18px}}
+.espacio-flotante{height:84px;background:var(--verde)}
+@media (min-width:760px){.espacio-flotante{height:0}}
+
+/* ---------- Aviso (toast) ---------- */
+.toast{position:fixed;z-index:60;left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));bottom:calc(88px + env(safe-area-inset-bottom,0px));margin-inline:auto;max-width:440px;background:var(--tinta);color:var(--crema);border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;box-shadow:0 10px 26px rgba(42,30,22,.35);font-weight:700;font-size:15px}
+.toast .link{color:var(--ocre);flex:none}
+@media (min-width:760px){.toast{bottom:calc(24px + env(safe-area-inset-bottom,0px));right:auto;left:24px}}
+
+/* ---------- Carrito ---------- */
+.carrito-fondo{position:fixed;inset:0;z-index:70;background:rgba(42,30,22,.55)}
+.carrito{position:fixed;z-index:71;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--crema);color:var(--tinta);display:flex;flex-direction:column;box-shadow:-10px 0 30px rgba(42,30,22,.25);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+.carrito-cabeza{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;background:var(--verde);color:var(--crema)}
+.carrito-cabeza h2{font-size:1.8rem;letter-spacing:-.04em}
+.carrito-cabeza p{font-size:13px;color:var(--crema-suave);margin-top:4px}
+.cerrar{width:42px;height:42px;border-radius:50%;border:2px solid rgba(246,235,216,.5);background:transparent;color:var(--crema);cursor:pointer;display:grid;place-items:center;flex:none}
+.cerrar:hover{border-color:var(--crema)}
+.cerrar svg{width:18px;height:18px}
+.carrito{overflow-y:auto;overscroll-behavior:contain}
+.carrito-cabeza{position:sticky;top:0;z-index:2}
+.carrito-lista{padding:0 20px 8px;list-style:none;margin:0}
+.carrito-paso{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);padding:16px 20px 4px}
+.carrito-pie .carrito-paso{padding:6px 0 0}
+.carrito-enviado{background:rgba(47,74,58,.1);border:1.5px solid var(--verde);border-radius:14px;padding:14px;display:grid;gap:8px;font-size:14px}
+.carrito-enviado strong{display:flex;align-items:center;gap:8px;color:var(--verde);font-size:15px}
+.carrito-enviado strong svg{width:18px;height:18px}
+.carrito-enviado .link{justify-self:start;color:var(--terracota)}
+.linea{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:12px;align-items:center;padding-block:14px;border-bottom:1px solid var(--linea)}
+.linea-mini{width:64px;height:64px;border-radius:12px;background:var(--panel);display:grid;place-items:center;overflow:hidden}
+.linea-mini svg{width:100%;height:auto}
+.linea-mini img{width:100%;height:100%;object-fit:cover}
+.linea-info{min-width:0;display:grid;gap:2px}
+.linea-info strong{font-size:16px;line-height:1.2}
+.linea-info span{font-size:13px;color:var(--tinta-suave)}
+.linea-info .link{justify-self:start;font-size:12px;color:var(--terracota);margin-top:2px}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid rgba(42,30,22,.3);border-radius:999px;overflow:hidden}
+.stepper button{width:34px;height:36px;border:0;background:transparent;font:900 18px var(--font);color:var(--verde);cursor:pointer}
+.stepper button:hover{background:var(--panel)}
+.stepper output{min-width:26px;text-align:center;font-weight:900;font-variant-numeric:tabular-nums}
+.carrito-vacio{flex:1 0 auto;display:grid;place-content:center;justify-items:center;gap:14px;padding:32px;text-align:center}
+.carrito-vacio strong{font-size:1.4rem;font-weight:900;letter-spacing:-.02em;color:var(--verde)}
+.carrito-pie{border-top:2px solid var(--verde);padding:16px 20px 20px;display:grid;gap:12px;background:var(--crema)}
+.totales{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-variant-numeric:tabular-nums}
+.totales strong{font-size:1.5rem;font-weight:900;letter-spacing:-.02em}
+.totales span{font-size:14px;color:var(--tinta-suave);text-align:right}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:15px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--verde);margin:2px 0 0;flex:none}
+.check small{display:block;font-size:13px;color:var(--tinta-suave)}
+.input{width:100%;font:400 16px var(--font);color:var(--tinta);background:var(--crema);border:1.5px solid rgba(42,30,22,.3);border-radius:12px;padding:11px 14px}
+.input:focus{border-color:var(--verde)}
+.carrito-pie .btn{width:100%}
+.carrito-nota{font-size:12.5px;color:var(--tinta-suave);text-align:center}
+.carrito-acciones{display:flex;justify-content:space-between;gap:12px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="logo" href="#inicio" aria-label="Tupa Alpargatas, ir al inicio">
+      <span class="logo-word">tupa</span>
+      <span class="logo-stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="logo-sub" aria-hidden="true">ALPARGATAS</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <ul>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#por-mayor">Por mayor</a></li>
+        <li><a href="#talles">Talles</a></li>
+        <li><a href="#como-comprar">Cómo comprar</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="btn-carrito" id="abrir-carrito" aria-label="Abrir carrito">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-bolsa"/></svg>
+      <span class="txt">Carrito</span>
+      <span class="badge" id="badge">0</span>
+    </button>
+    <a class="btn btn--terracota" data-wa="general" href="https://wa.me/5493774467151" target="_blank" rel="noopener">Pedí la tuya</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-in">
+      <div>
+        <p class="eyebrow">Alpargatas · Sauce, Corrientes</p>
+        <h1>Muchos modelos.</h1>
+        <p class="hero-bajada">Alpargatas con mucho confort y calidad, pensadas para acompañarte paso a paso.</p>
+        <div class="hero-acciones">
+          <a class="btn btn--terracota" data-wa="general" href="https://wa.me/5493774467151" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>
+            Pedí la tuya por WhatsApp
+          </a>
+          <a class="btn btn--borde" href="#modelos">Ver modelos</a>
+        </div>
+        <ul class="hero-datos">
+          <li><span id="hero-cant">10 modelos</span></li>
+          <li>Talles del 35 al 44</li>
+          <li>Ventas por menor y por mayor</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <div class="hero-disco" id="hero-foto"></div>
+        <p class="hero-sello">Del 35 al 44</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="franja" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <section class="seccion" id="modelos">
+    <div class="wrap">
+      <div class="seccion-cabeza">
+        <p class="eyebrow">Colecciones</p>
+        <h2>Elegí tu modelo</h2>
+        <p>Elegí tu talle, sumalo al carrito y mandanos el pedido completo por WhatsApp. Te confirmamos stock al toque.</p>
+      </div>
+      <div class="guia" id="guia" aria-label="Cómo comprar en 3 pasos">
+        <ol>
+          <li id="guia-1"><span class="guia-num">1</span>Elegí tu talle</li>
+          <li id="guia-2"><span class="guia-num">2</span>Agregalo al carrito</li>
+          <li id="guia-3"><span class="guia-num">3</span>Envianos el pedido por WhatsApp</li>
+        </ol>
+        <div class="guia-estado" aria-live="polite"><p id="guia-texto"></p><button type="button" class="btn btn--terracota btn--chico" id="guia-boton" hidden>Ver y enviar pedido</button></div>
+        <div class="guia-pie"><button type="button" class="link" id="ayudas-toggle">Ocultar mensajes de ayuda</button></div>
+      </div>
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar por colección" style="margin-top:22px"></div>
+      <p class="contador" id="contador" aria-live="polite"></p>
+      <div class="grilla" id="grilla"></div>
+    </div>
+  </section>
+
+  <section class="seccion mayor" id="por-mayor">
+    <div class="wrap mayor-in">
+      <div class="seccion-cabeza" style="margin-bottom:0">
+        <p class="eyebrow">Por mayor</p>
+        <h2>Pedido por mayor</h2>
+        <p>Para tu local, para revender o para regalar. Armá la curva de talles de cada modelo y sumala al pedido.</p>
+        <ul class="mayor-puntos">
+          <li>Sin cantidad mínima</li>
+          <li>Podés combinar todos los modelos que quieras</li>
+          <li>El precio mayorista te lo pasamos por WhatsApp</li>
+        </ul>
+      </div>
+      <form class="armador" id="armador" novalidate>
+        <div class="armador-cabeza">
+          <div class="armador-mini" id="mayor-mini"></div>
+          <div class="campo">
+            <label class="campo-label label-paso" for="mayor-modelo"><span class="num-paso">1</span>Elegí el modelo</label>
+            <select class="select" id="mayor-modelo"></select>
+          </div>
+        </div>
+        <fieldset class="campo" style="border:0;padding:0;margin:0">
+          <legend class="campo-label label-paso" style="margin-bottom:8px"><span class="num-paso">2</span>Cargá los pares de cada talle</legend>
+          <div class="curva ancla" id="curva"></div>
+        </fieldset>
+        <div class="armador-atajos">
+          <button type="button" class="link" id="curva-uno">1 par de cada talle</button>
+          <button type="button" class="link" id="curva-limpiar">Borrar cantidades</button>
+        </div>
+        <div class="carrito-enviado" id="mayor-ok" hidden>
+          <strong><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-check"/></svg><span id="mayor-ok-txt"></span></strong>
+          <p>Podés cargar otro modelo, o ver tu pedido y enviarlo por WhatsApp.</p>
+          <button type="button" class="btn btn--verde btn--chico" id="mayor-ver" style="justify-self:start">Ver y enviar pedido</button>
+        </div>
+        <div class="armador-pie">
+          <p class="armador-total" aria-live="polite"><span id="mayor-total">0 pares</span><small id="mayor-detalle">Cargá cuántos pares querés de cada talle</small></p>
+          <div class="ancla" id="ancla-mayor"><button type="submit" class="btn btn--terracota" id="mayor-sumar"><span class="num-paso">3</span>Sumar al pedido</button></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="franja" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <section class="seccion" id="talles">
+    <div class="wrap talles-in">
+      <div class="seccion-cabeza" style="margin-bottom:0">
+        <p class="eyebrow">Talles</p>
+        <h2>Talles del 35 al 44</h2>
+        <p>Tocá tu número y te decimos qué modelos tenemos en ese talle. Si estás entre dos talles, escribinos y te ayudamos a elegir.</p>
+        <a class="btn btn--verde" data-wa="talle" href="https://wa.me/5493774467151" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>
+          Consultá tu talle por WhatsApp
+        </a>
+      </div>
+      <div><ul class="cajas" id="cajas" aria-label="Talles disponibles"></ul></div>
+    </div>
+  </section>
+
+  <div class="franja" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <section class="seccion" id="como-comprar">
+    <div class="wrap">
+      <div class="seccion-cabeza">
+        <p class="eyebrow">Cómo comprar</p>
+        <h2>Pedirla es fácil</h2>
+      </div>
+      <ol class="pasos">
+        <li class="paso">
+          <span class="paso-num">01</span>
+          <h3>Armá tu carrito</h3>
+          <p>Elegí modelo y talle y sumalo al carrito. Si comprás por mayor, cargá la curva de talles de cada modelo.</p>
+        </li>
+        <li class="paso">
+          <span class="paso-num">02</span>
+          <h3>Envialo por WhatsApp</h3>
+          <p>Desde el carrito tocá "Enviar pedido" y se arma el mensaje solo. Te confirmamos stock y precio.</p>
+        </li>
+        <li class="paso">
+          <span class="paso-num">03</span>
+          <h3>Coordinamos la entrega</h3>
+          <p>Arreglamos juntos el pago y cómo y cuándo te llega tu pedido.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="franja" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap footer-in">
+    <a class="logo" href="#inicio" aria-label="Tupa Alpargatas, volver arriba">
+      <span class="logo-word">tupa</span>
+      <span class="logo-stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="logo-sub" aria-hidden="true">ALPARGATAS</span>
+    </a>
+    <div class="footer-col">
+      <p class="eyebrow">Pedidos</p>
+      <a data-wa="general" href="https://wa.me/5493774467151" target="_blank" rel="noopener">WhatsApp 3774 46-7151</a>
+      <small>Ventas por menor y por mayor.</small>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow">Seguinos</p>
+      <a href="https://www.instagram.com/tupa_alpargatass/" target="_blank" rel="noopener">Instagram @tupa_alpargatass</a>
+      <small>Novedades y modelos nuevos.</small>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>© <span id="anio">2026</span> Tupa Alpargatas · Sauce, Corrientes, Argentina</span>
+    <span>Pedidos únicamente por WhatsApp</span>
+  </div>
+  <div class="franja" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="espacio-flotante" aria-hidden="true"></div>
+</footer>
+
+<a class="wa-flotante" data-wa="flotante" href="https://wa.me/5493774467151" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>
+  <span>Escribinos</span>
+</a>
+
+<div class="barra-pedido" id="barra-pedido" hidden>
+  <div><strong id="barra-pares">0 pares</strong><span>en tu pedido</span></div>
+  <div class="ancla" id="ancla-barra"><button type="button" class="btn btn--terracota" id="barra-ver">Ver y enviar pedido</button></div>
+</div>
+
+<div class="toast" id="toast" role="status" hidden><span id="toast-txt"></span><button type="button" class="link" id="toast-ver">Ver carrito</button></div>
+
+<div class="carrito-fondo" id="carrito-fondo" hidden></div>
+<aside class="carrito" id="carrito" role="dialog" aria-modal="true" aria-labelledby="carrito-titulo" hidden>
+  <div class="carrito-cabeza">
+    <div>
+      <h2 id="carrito-titulo">Tu pedido</h2>
+      <p id="carrito-sub">Se envía por WhatsApp</p>
+    </div>
+    <button type="button" class="cerrar" id="cerrar-carrito" aria-label="Cerrar carrito">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <p class="carrito-paso" id="carrito-paso-1"><span class="num-paso">1</span>Revisá tu pedido</p>
+  <ul class="carrito-lista" id="carrito-lista"></ul>
+  <div class="carrito-vacio" id="carrito-vacio">
+    <strong>Tu carrito está vacío</strong>
+    <p>Elegí un modelo y tu talle, o armá un pedido por mayor.</p>
+    <a class="btn btn--verde btn--chico" href="#modelos" data-cerrar>Ver modelos</a>
+  </div>
+  <div class="carrito-pie" id="carrito-pie">
+    <div class="totales"><strong id="total-pares">0 pares</strong><span id="total-precio">Precio a confirmar</span></div>
+    <label class="check" for="es-mayor"><input type="checkbox" id="es-mayor"><span>Es un pedido por mayor<small>Te pasamos el precio mayorista por WhatsApp</small></span></label>
+    <p class="carrito-paso"><span class="num-paso">2</span>Tus datos (opcional)</p>
+    <div class="campo">
+      <label class="campo-label" for="cliente-nombre">Tu nombre</label>
+      <input class="input" id="cliente-nombre" autocomplete="name" placeholder="Ej: Sofía">
+    </div>
+    <div class="campo">
+      <label class="campo-label" for="cliente-zona">Ciudad o barrio</label>
+      <input class="input" id="cliente-zona" autocomplete="address-level2" placeholder="Ej: Sauce">
+    </div>
+    <p class="carrito-paso"><span class="num-paso">3</span>Envialo por WhatsApp</p>
+    <div class="ticket-marco">
+      <span class="ticket-titulo"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>Así nos llega tu pedido por WhatsApp</span>
+      <div class="ticket" id="ticket" aria-label="Vista previa del pedido"></div>
+    </div>
+    <div class="ancla" id="ancla-enviar"><a class="btn btn--terracota" id="enviar-pedido" href="https://wa.me/5493774467151" target="_blank" rel="noopener" style="width:100%">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>
+      Enviar pedido por WhatsApp
+    </a></div>
+    <p class="carrito-nota" id="carrito-nota">Se abre WhatsApp con el pedido ya escrito. Solo tenés que tocar Enviar.</p>
+    <div class="carrito-enviado" id="carrito-enviado" hidden>
+      <strong><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-check"/></svg>Último paso</strong>
+      <p>Si se abrió WhatsApp, revisá el mensaje y tocá <b>Enviar</b> para que nos llegue el pedido. Si no se abrió, escribinos al 3774 46-7151.</p>
+      <button type="button" class="link" id="ya-enviado">Ya lo mandé, vaciar carrito</button>
+    </div>
+    <div class="carrito-acciones">
+      <button type="button" class="link" data-cerrar>Seguir comprando</button>
+      <button type="button" class="link" id="vaciar">Vaciar carrito</button>
+    </div>
+  </div>
+</aside>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="icono-wa" viewBox="0 0 24 24">
+    <path d="M12 2.6a9.4 9.4 0 0 0-8.1 14.1L2.6 21.4l4.8-1.3A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+    <path d="M8.6 7.4c.3-.3.8-.3 1 .1l.9 1.8c.2.4.1.8-.2 1.1l-.6.6c.6 1.3 1.6 2.3 2.9 2.9l.6-.6c.3-.3.7-.4 1.1-.2l1.8.9c.4.2.4.7.1 1l-.8.9c-.5.5-1.3.7-2 .4-2.6-1-4.6-3-5.6-5.6-.3-.7-.1-1.5.4-2z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icono-check" viewBox="0 0 24 24">
+    <path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icono-bolsa" viewBox="0 0 24 24">
+    <path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M9 10V7a3 3 0 0 1 6 0v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN — editá acá
+   ===================================================================== */
+const CONFIG = {
+  whatsapp: "5493774467151",           // código país + área sin 0 + número sin 15
+  heroFoto: "",                        // ej: "fotos/hero.jpg" — vacío = ilustración
+};
+
+/* ---------------------------------------------------------------------
+   PRODUCTOS — para agregar un modelo, copiá una línea y cambiá los datos.
+   nombre:    como aparece en la tarjeta y en el mensaje de WhatsApp
+   categoria: "Rayadas" | "Combinadas" | "Cuadrillé" | "Clásica"
+   foto:      ruta o link de la foto (ej "fotos/rayada-roja.jpg").
+              Si la dejás vacía se muestra una ilustración del modelo.
+   precio:    número (ej 25000) o texto. Vacío = "Consultá el precio"
+   dibujo:    colores de la ilustración (solo se usa si no hay foto)
+
+   COLORES (opcional): si un modelo viene en varios colores, agregale
+   "colores" y en la tarjeta aparecen circulitos para elegir. Ejemplo:
+   { nombre: "Lisa", categoria: "Clásica", precio: "",
+     colores: [
+       { nombre: "Negra",  muestra: "#24201E", foto: "", dibujo: { tipo: "liso", color: "#24201E" } },
+       { nombre: "Beige",  muestra: "#D9C3A0", foto: "", dibujo: { tipo: "liso", color: "#D9C3A0" } },
+     ] },
+   --------------------------------------------------------------------- */
+const PRODUCTOS = [
+  { nombre: "Rayada roja",         categoria: "Rayadas",    foto: "", precio: "", dibujo: { tipo: "rayas", colores: ["#B5372C", "#F3E8D5"] } },
+  { nombre: "Rayada negra",        categoria: "Rayadas",    foto: "", precio: "", dibujo: { tipo: "rayas", colores: ["#24201E", "#F1E8D8"] } },
+  { nombre: "Rayada gris",         categoria: "Rayadas",    foto: "", precio: "", dibujo: { tipo: "rayas", colores: ["#8C8E8B", "#F0EBE2"] } },
+  { nombre: "Rayada bordó",        categoria: "Rayadas",    foto: "", precio: "", dibujo: { tipo: "rayas", colores: ["#6E1F2B", "#F1E5D4"] } },
+  { nombre: "Bordó y negro",       categoria: "Combinadas", foto: "", precio: "", dibujo: { tipo: "combinada", punta: { tipo: "liso", color: "#6E1F2B" }, talon: { tipo: "liso", color: "#24201E" } } },
+  { nombre: "Celeste y cuadrillé", categoria: "Combinadas", foto: "", precio: "", dibujo: { tipo: "combinada", punta: { tipo: "liso", color: "#93BEDA" }, talon: { tipo: "cuadrille", color: "#5D8DB4" } } },
+  { nombre: "Azul y rayada",       categoria: "Combinadas", foto: "", precio: "", dibujo: { tipo: "combinada", punta: { tipo: "liso", color: "#27406B" }, talon: { tipo: "rayas", colores: ["#27406B", "#F1E8D8"] } } },
+  { nombre: "Cuadrillé y gris",    categoria: "Combinadas", foto: "", precio: "", dibujo: { tipo: "combinada", punta: { tipo: "cuadrille", color: "#2B2B2B" }, talon: { tipo: "liso", color: "#8C8E8B" } } },
+  { nombre: "Cuadrillé lila",      categoria: "Cuadrillé",  foto: "", precio: "", dibujo: { tipo: "cuadrille", color: "#9682C2" } },
+  { nombre: "Marrón",              categoria: "Clásica",    foto: "", precio: "", dibujo: { tipo: "liso", color: "#6B4A32" } },
+];
+
+const CATEGORIAS = ["Todas", "Rayadas", "Combinadas", "Cuadrillé", "Clásica"];
+const TALLES = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44];
+
+/* Mensajes precargados */
+const MENSAJES = {
+  general:  "Hola Tupa! Quiero pedir unas alpargatas. ¿Qué modelos tienen en stock?",
+  talle:    "Hola Tupa! Quería consultar por los talles. ¿Me ayudan a elegir el mío?",
+  flotante: "Hola Tupa! Vengo de la web y quiero hacer una consulta.",
+  modelo:   (m, t) => t
+    ? `Hola Tupa! Quiero la alpargata ${m} en talle ${t}. ¿Tienen stock?`
+    : `Hola Tupa! Quiero la alpargata ${m}. ¿Qué talles tienen en stock?`,
+  cajaTalle: (t) => `Hola Tupa! Calzo ${t}. ¿Qué modelos tienen en ese talle?`,
+};
+
+/* =====================================================================
+   A partir de acá no hace falta tocar nada
+   ===================================================================== */
+const $ = (id) => document.getElementById(id);
+const wa = (msg) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const pares = (n) => n === 1 ? "1 par" : `${n} pares`;
+const plata = (n) => "$ " + n.toLocaleString("es-AR");
+
+function formatoPrecio(p) {
+  if (p === "" || p === null || p === undefined) return null;
+  return typeof p === "number" ? plata(p) : String(p);
+}
+
+/* Cada producto se normaliza a una lista de variantes de color */
+PRODUCTOS.forEach((p, i) => {
+  p.id = slug(p.nombre) || "modelo-" + i;
+  p.variantes = (p.colores && p.colores.length)
+    ? p.colores
+    : [{ nombre: "", foto: p.foto, dibujo: p.dibujo }];
+});
+const buscar = (id) => PRODUCTOS.find((p) => p.id === id);
+
+/* ---- Ilustración SVG de alpargata (hasta tener fotos) ---- */
+function tela(spec, id) {
+  if (spec.tipo === "rayas") {
+    const c = spec.colores, h = 9;
+    const rects = c.map((col, i) => `<rect y="${i * h}" width="40" height="${h}" fill="${col}"/>`).join("");
+    return `<pattern id="${id}" width="40" height="${h * c.length}" patternUnits="userSpaceOnUse" patternTransform="rotate(-7)">${rects}</pattern>`;
+  }
+  if (spec.tipo === "cuadrille") {
+    return `<pattern id="${id}" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-7)"><rect width="16" height="16" fill="#F4EEE4"/><rect width="8" height="16" fill="${spec.color}" opacity=".55"/><rect width="16" height="8" fill="${spec.color}" opacity=".55"/></pattern>`;
+  }
+  return `<pattern id="${id}" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="${spec.color}"/><circle cx="1.5" cy="1.5" r=".7" fill="#000" opacity=".1"/><circle cx="4.5" cy="4.5" r=".7" fill="#fff" opacity=".07"/></pattern>`;
+}
+function colorMuestra(d) {
+  if (!d) return "#C9A46B";
+  if (d.tipo === "rayas") return d.colores[0];
+  if (d.tipo === "combinada") return colorMuestra(d.punta);
+  return d.color;
+}
+
+const PATH_CAPELLADA = "M48,202 C44,170 52,138 72,128 C100,120 132,140 166,142 C192,143 206,128 230,118 C282,108 332,138 352,170 C361,184 360,197 352,203 Z";
+const PATH_BOCA = "M74,131 C104,124 136,146 166,145 C190,144 206,131 228,121 C206,134 186,139 160,138 C128,136 102,128 74,131 Z";
+
+function alpargata(d, uid) {
+  let defs = "", capellada;
+  if (d.tipo === "combinada") {
+    defs += tela(d.talon, uid + "t") + tela(d.punta, uid + "p");
+    defs += `<clipPath id="${uid}ct"><polygon points="0,0 212,0 196,260 0,260"/></clipPath><clipPath id="${uid}cp"><polygon points="212,0 400,0 400,260 196,260"/></clipPath>`;
+    capellada = `<path d="${PATH_CAPELLADA}" fill="url(#${uid}t)" clip-path="url(#${uid}ct)"/>
+      <path d="${PATH_CAPELLADA}" fill="url(#${uid}p)" clip-path="url(#${uid}cp)"/>
+      <path d="M211,121 C205,150 199,178 197,201" fill="none" stroke="#F6EBD8" stroke-width="2" stroke-dasharray="5 4" opacity=".85"/>`;
+  } else {
+    defs += tela(d, uid + "u");
+    capellada = `<path d="${PATH_CAPELLADA}" fill="url(#${uid}u)"/>`;
+  }
+  defs += `<pattern id="${uid}y" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(38)"><rect width="7" height="7" fill="#C9A46B"/><rect width="3" height="7" fill="#2A1E16" opacity=".14"/></pattern>`;
+  const zapato = `${capellada}
+    <path d="${PATH_CAPELLADA}" fill="none" stroke="#2A1E16" stroke-opacity=".35" stroke-width="2"/>
+    <path d="${PATH_BOCA}" fill="#2A1E16" opacity=".32"/>
+    <rect x="38" y="196" width="326" height="34" rx="16" fill="url(#${uid}y)"/>
+    <rect x="38" y="196" width="326" height="34" rx="16" fill="none" stroke="#2A1E16" stroke-opacity=".22" stroke-width="1.5"/>
+    <path d="M56,213 H346" stroke="#2A1E16" stroke-opacity=".25" stroke-width="1.5" stroke-dasharray="3 5"/>
+    <rect x="40" y="224" width="322" height="8" rx="4" fill="#2A1E16"/>`;
+  return { defs, zapato };
+}
+function svgAlpargata(d, uid, label, par = false) {
+  const { defs, zapato } = alpargata(d || { tipo: "liso", color: "#C9A46B" }, uid);
+  const aria = label ? `role="img" aria-label="${esc(label)}"` : `aria-hidden="true"`;
+  if (par) {
+    return `<svg viewBox="20 40 380 220" ${aria}><defs>${defs}</defs>
+      <ellipse cx="210" cy="240" rx="170" ry="9" fill="#2A1E16" opacity=".14"/>
+      <g transform="translate(52,-54) scale(.92)">${zapato}</g><g>${zapato}</g></svg>`;
+  }
+  return `<svg viewBox="20 92 380 156" ${aria}><defs>${defs}</defs>
+    <ellipse cx="200" cy="238" rx="168" ry="7" fill="#2A1E16" opacity=".14"/>${zapato}</svg>`;
+}
+function media(v, uid, label, lazy = true) {
+  return v.foto
+    ? `<img src="${esc(v.foto)}" alt="${esc(label || "")}" ${lazy ? 'loading="lazy"' : ""} decoding="async" width="600" height="600">`
+    : svgAlpargata(v.dibujo, uid, label ? "Ilustración: " + label : "");
+}
+const nombreCompleto = (p, v) => v && v.nombre ? `${p.nombre} (${v.nombre})` : p.nombre;
+
+/* =====================================================================
+   CATÁLOGO
+   ===================================================================== */
+const grilla = $("grilla"), filtros = $("filtros"), contador = $("contador");
+let filtroActual = "Todas";
+const colorElegido = {}; // id producto -> índice de variante
+
+function tarjeta(p, i) {
+  const v = p.variantes[0];
+  const precio = formatoPrecio(p.precio);
+  const opciones = TALLES.map((t) => `<option value="${t}">${t}</option>`).join("");
+  const colores = p.variantes.length > 1 ? `
+      <div class="colores">
+        <span class="campo-label">Color: <span class="color-nombre" id="colnom-${p.id}">${esc(v.nombre)}</span></span>
+        <div class="colores-lista" role="group" aria-label="Elegí el color">
+          ${p.variantes.map((c, k) => `<button type="button" class="swatch" data-prod="${p.id}" data-var="${k}" aria-pressed="${k === 0}" aria-label="${esc(c.nombre)}" style="background:${esc(c.muestra || colorMuestra(c.dibujo))}"></button>`).join("")}
+        </div>
+      </div>` : "";
+  return `<article class="card" data-cat="${esc(p.categoria)}">
+    <div class="card-media" id="media-${p.id}">${media(v, "a" + i, "Alpargata " + nombreCompleto(p, v))}</div>
+    <div class="card-body">
+      <span class="tag tag--${slug(p.categoria)}">${esc(p.categoria)}</span>
+      <h3>${esc(p.nombre)}</h3>
+      <p class="precio${precio ? "" : " precio--consultar"}">${precio ? esc(precio) : "Consultá el precio"}</p>
+      ${colores}
+      <label class="talle ancla" id="ancla-talle-${p.id}" for="talle-${p.id}"><span class="campo-label label-paso"><span class="num-paso">1</span>Elegí tu talle</span>
+        <select class="select" id="talle-${p.id}" data-prod="${p.id}"><option value="">Elegí</option>${opciones}</select>
+      </label>
+      <p class="aviso" id="aviso-${p.id}" aria-live="polite"></p>
+      <div class="ancla" id="ancla-agregar-${p.id}"><button type="button" class="btn btn--verde btn--chico" data-agregar="${p.id}">
+        <span class="num-paso">2</span><span>Agregar<span class="solo-ancho"> al carrito</span></span>
+      </button></div>
+      <button type="button" class="en-carrito" id="encarrito-${p.id}" data-ver-carrito hidden></button>
+      <p class="directo">o <a id="pedir-${p.id}" href="${wa(MENSAJES.modelo(p.nombre))}" target="_blank" rel="noopener">pedila directo</a></p>
+    </div>
+  </article>`;
+}
+
+function renderFiltros() {
+  filtros.innerHTML = CATEGORIAS.map((c) => {
+    const n = c === "Todas" ? PRODUCTOS.length : PRODUCTOS.filter((p) => p.categoria === c).length;
+    return `<button type="button" class="pill" id="filtro-${slug(c)}" data-filtro="${esc(c)}" aria-pressed="${c === filtroActual}">${esc(c)} <span class="n">${n}</span></button>`;
+  }).join("");
+}
+
+function aplicarFiltro() {
+  let visibles = 0;
+  grilla.querySelectorAll(".card").forEach((card) => {
+    const ok = filtroActual === "Todas" || card.dataset.cat === filtroActual;
+    card.hidden = !ok;
+    if (ok) visibles++;
+  });
+  filtros.querySelectorAll(".pill").forEach((b) => b.setAttribute("aria-pressed", b.dataset.filtro === filtroActual));
+  grilla.querySelector(".vacio").hidden = visibles > 0;
+  contador.textContent = visibles === 1 ? "Mostrando 1 modelo" : `Mostrando ${visibles} modelos`;
+  if (typeof carrito !== "undefined") actualizarGlobos();
+}
+
+function actualizarDirecto(id) {
+  const p = buscar(id), v = p.variantes[colorElegido[id] || 0];
+  $("pedir-" + id).href = wa(MENSAJES.modelo(nombreCompleto(p, v), $("talle-" + id).value));
+}
+
+filtros.addEventListener("click", (e) => {
+  const b = e.target.closest(".pill");
+  if (!b) return;
+  filtroActual = b.dataset.filtro;
+  aplicarFiltro();
+});
+
+grilla.addEventListener("change", (e) => {
+  const sel = e.target.closest("select[data-prod]");
+  if (!sel) return;
+  ayuda.ultimo = sel.dataset.prod;
+  ayuda.falta = null;
+  sel.classList.remove("error");
+  $("aviso-" + sel.dataset.prod).textContent = "";
+  actualizarDirecto(sel.dataset.prod);
+  actualizarGuia();
+});
+
+grilla.addEventListener("click", (e) => {
+  const sw = e.target.closest(".swatch");
+  if (sw) {
+    const id = sw.dataset.prod, k = +sw.dataset.var, p = buscar(id), v = p.variantes[k];
+    colorElegido[id] = k;
+    sw.parentElement.querySelectorAll(".swatch").forEach((b) => b.setAttribute("aria-pressed", b === sw));
+    $("colnom-" + id).textContent = v.nombre;
+    $("media-" + id).innerHTML = media(v, "sw" + id + k, "Alpargata " + nombreCompleto(p, v));
+    actualizarDirecto(id);
+    return;
+  }
+  const add = e.target.closest("[data-agregar]");
+  if (add) {
+    const id = add.dataset.agregar, sel = $("talle-" + id);
+    if (!sel.value) {
+      ayuda.falta = id;
+      actualizarGlobos();
+      sel.classList.add("error");
+      $("aviso-" + id).textContent = "Elegí tu talle";
+      sel.focus();
+      return;
+    }
+    const p = buscar(id), v = p.variantes[colorElegido[id] || 0];
+    agregar(id, colorElegido[id] || 0, +sel.value, 1);
+    avisar(`Sumaste ${nombreCompleto(p, v)}, talle ${sel.value}`);
+    if (!add.dataset.orig) add.dataset.orig = add.innerHTML;
+    add.classList.add("agregado");
+    add.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-check"/></svg><span>Agregado</span>';
+    clearTimeout(add._t);
+    add._t = setTimeout(() => { add.classList.remove("agregado"); add.innerHTML = add.dataset.orig; }, 1500);
+    return;
+  }
+  if (e.target.closest("[data-ver-carrito]")) abrirCarrito();
+});
+
+/* =====================================================================
+   CARRITO
+   ===================================================================== */
+const CLAVE = "tupa-carrito-v1";
+let carrito = { lineas: [], mayor: false, nombre: "", zona: "" };
+try { const g = JSON.parse(localStorage.getItem(CLAVE)); if (g && Array.isArray(g.lineas)) carrito = Object.assign(carrito, g); } catch (e) {}
+carrito.lineas = carrito.lineas.filter((l) => buscar(l.id) && buscar(l.id).variantes[l.v]);
+function guardar() { try { localStorage.setItem(CLAVE, JSON.stringify(carrito)); } catch (e) {} }
+
+function agregar(id, v, talle, cant) {
+  const l = carrito.lineas.find((x) => x.id === id && x.v === v && x.talle === talle);
+  if (l) l.cant += cant; else carrito.lineas.push({ id, v, talle, cant });
+  carrito.lineas.sort((a, b) => PRODUCTOS.indexOf(buscar(a.id)) - PRODUCTOS.indexOf(buscar(b.id)) || a.v - b.v || a.talle - b.talle);
+  guardar();
+  renderCarrito();
+  const btn = $("abrir-carrito");
+  btn.classList.remove("salto"); void btn.offsetWidth; btn.classList.add("salto");
+}
+
+const ICONO_CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-check"/></svg>';
+function actualizarGuia() {
+  const n = totalPares();
+  const hayTalle = !!grilla.querySelector("select[data-prod]") && [...grilla.querySelectorAll("select[data-prod]")].some((s) => s.value);
+  const paso = n > 0 ? 3 : (hayTalle ? 2 : 1);
+  [1, 2, 3].forEach((k) => {
+    const li = $("guia-" + k);
+    li.className = k < paso ? "hecho" : (k === paso ? "activo" : "");
+    li.querySelector(".guia-num").innerHTML = k < paso ? ICONO_CHECK : k;
+  });
+  const txt = {
+    1: 'Elegí el talle en el modelo que más te guste. ¿Dudas con tu talle? <a href="#talles">Consultanos acá</a>.',
+    2: "Bien. Ahora tocá <b>Agregar al carrito</b> en ese modelo.",
+    3: `Tenés <b>${pares(n)}</b> en tu pedido. Podés seguir sumando modelos o enviarlo cuando quieras.`,
+  }[paso];
+  $("guia-texto").innerHTML = txt;
+  $("guia-boton").hidden = paso !== 3;
+  actualizarGlobos();
+}
+
+/* ---- Globitos que señalan dónde tocar ---- */
+const ayuda = { ultimo: null, falta: null, vioCarrito: false, tocoEnviar: false, apagada: false };
+try { ayuda.apagada = localStorage.getItem("tupa-ayudas") === "off"; } catch (e) {}
+
+function globo(anclaId, texto, clases) {
+  const a = $(anclaId);
+  if (!a) return;
+  const g = document.createElement("span");
+  g.className = "globo " + clases;
+  g.setAttribute("role", "note");
+  g.textContent = texto;
+  a.appendChild(g);
+}
+function actualizarGlobos() {
+  document.querySelectorAll(".globo").forEach((g) => g.remove());
+  $("ayudas-toggle").textContent = ayuda.apagada ? "Mostrar mensajes de ayuda" : "Ocultar mensajes de ayuda";
+  if (ayuda.apagada) return;
+  const n = totalPares();
+  const enCarrito = (id, t) => carrito.lineas.some((l) => l.id === id && String(l.talle) === String(t));
+  const visible = (id) => { const c = $("ancla-talle-" + id); return c && !c.closest(".card").hidden; };
+
+  // Catálogo
+  if (ayuda.falta && visible(ayuda.falta) && !$("talle-" + ayuda.falta).value) {
+    globo("ancla-talle-" + ayuda.falta, "Primero elegí tu talle acá", "globo--arriba");
+  } else {
+    const sel = ayuda.ultimo && $("talle-" + ayuda.ultimo);
+    if (sel && sel.value && visible(ayuda.ultimo) && !enCarrito(ayuda.ultimo, sel.value)) {
+      globo("ancla-agregar-" + ayuda.ultimo, "Ahora tocá acá para agregarla", "globo--abajo");
+    } else if (n === 0) {
+      const primera = grilla.querySelector(".card:not([hidden]) select[data-prod]");
+      if (primera && ![...grilla.querySelectorAll("select[data-prod]")].some((s) => s.value)) {
+        globo("ancla-talle-" + primera.dataset.prod, "Empezá acá: elegí tu talle", "globo--arriba");
+      }
+    }
+  }
+  // Barra de pedido
+  if (n > 0 && !ayuda.vioCarrito) globo("ancla-barra", "Cuando termines, tocá acá para enviar tu pedido", "globo--arriba globo--der");
+  // Carrito abierto
+  if (n > 0 && !ayuda.tocoEnviar) globo("ancla-enviar", "Tocá acá y se abre WhatsApp con tu pedido escrito", "globo--abajo");
+  // Por mayor
+  const pm = leerCurva().reduce((s, c) => s + c.n, 0);
+  if (pm > 0) globo("ancla-mayor", "Tocá acá para sumarlo al pedido", "globo--arriba globo--der");
+  else if ($("mayor-ok").hidden) globo("curva", "Escribí cuántos pares querés de cada talle", "globo--arriba");
+}
+$("ayudas-toggle").addEventListener("click", () => {
+  ayuda.apagada = !ayuda.apagada;
+  try { localStorage.setItem("tupa-ayudas", ayuda.apagada ? "off" : "on"); } catch (e) {}
+  actualizarGlobos();
+});
+
+function totalPares() { return carrito.lineas.reduce((s, l) => s + l.cant, 0); }
+
+/* ---- Ticket del pedido (lo que se ve en el carrito y lo que llega por WhatsApp) ---- */
+function nuevoCodigo() {
+  const d = new Date();
+  const dd = String(d.getDate()).padStart(2, "0"), mm = String(d.getMonth() + 1).padStart(2, "0");
+  return `T-${dd}${mm}-${String(Math.floor(1000 + Math.random() * 9000))}`;
+}
+function datosTicket() {
+  if (!carrito.codigo) { carrito.codigo = nuevoCodigo(); guardar(); }
+  const grupos = [];
+  carrito.lineas.forEach((l) => {
+    const p = buscar(l.id), v = p.variantes[l.v], nom = nombreCompleto(p, v);
+    let g = grupos.find((x) => x.nom === nom);
+    if (!g) grupos.push(g = { nom, items: [] });
+    g.items.push({ talle: l.talle, cant: l.cant });
+  });
+  const d = new Date();
+  const fecha = d.toLocaleDateString("es-AR", { day: "2-digit", month: "2-digit", year: "numeric" }) + " " +
+    d.toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit", hour12: false });
+  const t = totalPlata();
+  return {
+    codigo: carrito.codigo, fecha, mayor: carrito.mayor, grupos, n: totalPares(),
+    precio: carrito.mayor ? "A confirmar" : (t !== null ? plata(t) : "A confirmar"),
+    nombre: carrito.nombre.trim(), zona: carrito.zona.trim(),
+  };
+}
+
+function mensajePedido() {
+  const T = datosTicket(), W = 26, sep = "-".repeat(W);
+  const fila = (a, b) => { a = String(a); b = String(b); const sp = W - a.length - b.length; return sp >= 1 ? a + " ".repeat(sp) + b : (a.slice(0, W - b.length - 1) + " " + b); };
+  const L = [
+    "*TUPA ALPARGATAS*",
+    "_Pedido desde la web · Sauce, Corrientes_",
+    "",
+    "```" + sep,
+    fila("PEDIDO", T.codigo),
+    fila("FECHA", T.fecha),
+    fila("TIPO", T.mayor ? "POR MAYOR" : "MINORISTA"),
+    sep,
+  ];
+  T.grupos.forEach((g) => {
+    L.push(g.nom.toUpperCase().slice(0, W));
+    g.items.forEach((it) => L.push(fila("  Talle " + it.talle, "x" + it.cant)));
+  });
+  L.push(sep, fila("TOTAL", pares(T.n).toUpperCase()), fila("PRECIO", T.precio.toUpperCase()), sep + "```");
+  if (T.nombre) L.push("Cliente: *" + T.nombre + "*");
+  if (T.zona) L.push("Zona: " + T.zona);
+  L.push("", T.mayor ? "Hola Tupa! Quiero hacer este pedido por mayor. ¿Me pasan precio mayorista y stock?" : "Hola Tupa! Quiero hacer este pedido. ¿Me confirman stock y precio?");
+  return L.join("\n");
+}
+
+function renderTicket() {
+  const T = datosTicket();
+  const fila = (a, b, cls = "") => `<div class="t-fila ${cls}"><span class="l">${esc(a)}</span><span class="p"></span><span class="r">${esc(b)}</span></div>`;
+  let h = `<div class="t-cab"><span class="t-logo">tupa</span><span class="t-franja" aria-hidden="true"><i></i><i></i><i></i></span><small>Alpargatas · Sauce, Ctes.</small>
+    <span class="t-tipo${T.mayor ? " t-tipo--mayor" : ""}">${T.mayor ? "POR MAYOR" : "MINORISTA"}</span></div>
+    <div class="t-sep"></div>${fila("Pedido", T.codigo)}${fila("Fecha", T.fecha)}`;
+  if (T.nombre) h += fila("Cliente", T.nombre);
+  if (T.zona) h += fila("Zona", T.zona);
+  h += `<div class="t-sep"></div>`;
+  T.grupos.forEach((g) => {
+    h += `<div class="t-modelo">${esc(g.nom)}</div>`;
+    g.items.forEach((it) => { h += fila("Talle " + it.talle, "x" + it.cant, "t-sangria"); });
+  });
+  h += `<div class="t-sep"></div>${fila("Total", pares(T.n), "t-total")}${fila("Precio", T.precio)}
+    <div class="t-sep"></div><p class="t-pie">Pedido a confirmar por WhatsApp.<br>Te respondemos con stock y precio.</p>`;
+  $("ticket").innerHTML = h;
+}
+
+function totalPlata() {
+  let s = 0;
+  for (const l of carrito.lineas) {
+    const p = buscar(l.id);
+    if (typeof p.precio !== "number") return null;
+    s += p.precio * l.cant;
+  }
+  return s;
+}
+
+function renderCarrito() {
+  const n = totalPares(), vacio = n === 0;
+  $("badge").textContent = n;
+  $("abrir-carrito").setAttribute("aria-label", `Abrir carrito, ${pares(n)}`);
+  $("carrito-lista").hidden = vacio;
+  $("carrito-pie").hidden = vacio;
+  $("carrito-vacio").hidden = !vacio;
+  $("carrito-sub").textContent = carrito.mayor ? "Pedido por mayor · se envía por WhatsApp" : "Se envía por WhatsApp";
+  $("carrito-lista").innerHTML = carrito.lineas.map((l, i) => {
+    const p = buscar(l.id), v = p.variantes[l.v];
+    return `<li class="linea">
+      <div class="linea-mini">${media(v, "c" + i, "", false)}</div>
+      <div class="linea-info">
+        <strong>${esc(p.nombre)}</strong>
+        <span>${v.nombre ? esc(v.nombre) + " · " : ""}Talle ${l.talle}</span>
+        <button type="button" class="link" data-quitar="${i}">Quitar</button>
+      </div>
+      <div class="stepper" role="group" aria-label="Cantidad de ${esc(p.nombre)} talle ${l.talle}">
+        <button type="button" data-menos="${i}" aria-label="Uno menos">−</button>
+        <output>${l.cant}</output>
+        <button type="button" data-mas="${i}" aria-label="Uno más">+</button>
+      </div>
+    </li>`;
+  }).join("");
+  $("total-pares").textContent = pares(n);
+  const t = totalPlata();
+  $("total-precio").textContent = carrito.mayor ? "Precio mayorista a confirmar" : (t !== null ? plata(t) : "Precio a confirmar");
+  $("es-mayor").checked = carrito.mayor;
+  if (document.activeElement !== $("cliente-nombre")) $("cliente-nombre").value = carrito.nombre;
+  if (document.activeElement !== $("cliente-zona")) $("cliente-zona").value = carrito.zona;
+  $("enviar-pedido").href = vacio ? wa(MENSAJES.general) : wa(mensajePedido());
+  if (!vacio) renderTicket();
+  $("carrito-paso-1").hidden = vacio;
+  $("barra-pedido").hidden = vacio;
+  $("barra-pares").textContent = pares(n);
+  document.body.classList.toggle("tiene-pedido", !vacio);
+  PRODUCTOS.forEach((p) => {
+    const el = $("encarrito-" + p.id);
+    if (!el) return;
+    const c = carrito.lineas.filter((l) => l.id === p.id).reduce((s, l) => s + l.cant, 0);
+    el.hidden = c === 0;
+    if (c) el.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-check"/></svg><span>${pares(c)} en el carrito</span>`;
+  });
+  actualizarGuia();
+}
+
+$("carrito-lista").addEventListener("click", (e) => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  const i = +(b.dataset.mas ?? b.dataset.menos ?? b.dataset.quitar);
+  const l = carrito.lineas[i];
+  if (!l) return;
+  if (b.dataset.mas !== undefined) l.cant++;
+  else if (b.dataset.menos !== undefined) l.cant = Math.max(0, l.cant - 1);
+  else l.cant = 0;
+  carrito.lineas = carrito.lineas.filter((x) => x.cant > 0);
+  guardar(); renderCarrito();
+  if (!carrito.lineas.length) $("cerrar-carrito").focus();
+});
+$("barra-ver").addEventListener("click", abrirCarrito);
+$("guia-boton").addEventListener("click", abrirCarrito);
+$("enviar-pedido").addEventListener("click", () => {
+  if (!totalPares()) return;
+  $("enviar-pedido").href = wa(mensajePedido()); // fecha y hora al momento de enviar
+  ayuda.tocoEnviar = true;
+  actualizarGlobos();
+  $("carrito-enviado").hidden = false;
+  $("carrito-nota").hidden = true;
+  setTimeout(() => $("carrito-enviado").scrollIntoView({ block: "nearest" }), 50);
+});
+$("ya-enviado").addEventListener("click", () => {
+  carrito.lineas = []; carrito.mayor = false; carrito.codigo = "";
+  grilla.querySelectorAll("select[data-prod]").forEach((sel) => { sel.value = ""; actualizarDirecto(sel.dataset.prod); });
+  guardar(); renderCarrito();
+  $("carrito-enviado").hidden = true; $("carrito-nota").hidden = false;
+  cerrarCarrito();
+  avisar("Gracias por tu pedido. Te respondemos por WhatsApp.");
+  $("toast-ver").hidden = true;
+});
+$("es-mayor").addEventListener("change", (e) => { carrito.mayor = e.target.checked; guardar(); renderCarrito(); });
+$("cliente-nombre").addEventListener("input", (e) => { carrito.nombre = e.target.value; guardar(); renderCarrito(); });
+$("cliente-zona").addEventListener("input", (e) => { carrito.zona = e.target.value; guardar(); renderCarrito(); });
+
+let confirmarVaciar = null;
+$("vaciar").addEventListener("click", (e) => {
+  const b = e.currentTarget;
+  if (!confirmarVaciar) {
+    b.textContent = "Tocá de nuevo para vaciar";
+    confirmarVaciar = setTimeout(() => { b.textContent = "Vaciar carrito"; confirmarVaciar = null; }, 3000);
+    return;
+  }
+  clearTimeout(confirmarVaciar); confirmarVaciar = null;
+  b.textContent = "Vaciar carrito";
+  carrito.lineas = []; carrito.mayor = false; carrito.codigo = "";
+  guardar(); renderCarrito();
+});
+
+/* Abrir / cerrar panel */
+let ultimoFoco = null;
+function abrirCarrito() {
+  ayuda.vioCarrito = true;
+  actualizarGlobos();
+  ultimoFoco = document.activeElement;
+  $("toast").hidden = true;
+  $("carrito").hidden = false; $("carrito-fondo").hidden = false;
+  document.documentElement.style.overflow = "hidden";
+  $("cerrar-carrito").focus();
+}
+function cerrarCarrito() {
+  $("carrito").hidden = true; $("carrito-fondo").hidden = true;
+  document.documentElement.style.overflow = "";
+  if (ultimoFoco && ultimoFoco.focus) ultimoFoco.focus();
+}
+$("abrir-carrito").addEventListener("click", abrirCarrito);
+$("toast-ver").addEventListener("click", abrirCarrito);
+$("cerrar-carrito").addEventListener("click", cerrarCarrito);
+$("carrito-fondo").addEventListener("click", cerrarCarrito);
+document.querySelectorAll("[data-cerrar]").forEach((el) => el.addEventListener("click", cerrarCarrito));
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("carrito").hidden) cerrarCarrito(); });
+
+let toastTimer;
+function avisar(txt) {
+  $("toast-txt").textContent = txt;
+  $("toast-ver").hidden = false;
+  $("toast").hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { $("toast").hidden = true; }, 3800);
+}
+
+/* =====================================================================
+   POR MAYOR — armador de curva de talles
+   ===================================================================== */
+const selMayor = $("mayor-modelo");
+selMayor.innerHTML = PRODUCTOS.map((p) => p.variantes.map((v, k) =>
+  `<option value="${p.id}|${k}">${esc(nombreCompleto(p, v))}</option>`).join("")).join("");
+$("curva").innerHTML = TALLES.map((t) =>
+  `<label for="mayor-${t}"><span>${t}</span><input class="num" type="number" id="mayor-${t}" min="0" max="999" inputmode="numeric" placeholder="0" aria-label="Pares talle ${t}"></label>`).join("");
+
+function leerCurva() {
+  return TALLES.map((t) => ({ t, n: Math.max(0, Math.min(999, parseInt($("mayor-" + t).value, 10) || 0)) }));
+}
+function actualizarArmador() {
+  const [id, k] = selMayor.value.split("|"), p = buscar(id), v = p.variantes[+k];
+  $("mayor-mini").innerHTML = media(v, "mm", "", false);
+  const curva = leerCurva(), n = curva.reduce((s, c) => s + c.n, 0);
+  curva.forEach((c) => $("mayor-" + c.t).classList.toggle("lleno", c.n > 0));
+  $("mayor-total").textContent = pares(n);
+  $("mayor-detalle").textContent = n ? `de ${nombreCompleto(p, v)}` : "Cargá cuántos pares querés de cada talle";
+  $("mayor-sumar").setAttribute("aria-disabled", n === 0);
+  if (typeof actualizarGlobos === "function" && $("guia-1")) actualizarGlobos();
+}
+selMayor.addEventListener("change", actualizarArmador);
+$("curva").addEventListener("input", () => { $("mayor-ok").hidden = true; actualizarArmador(); });
+$("curva-uno").addEventListener("click", () => { TALLES.forEach((t) => $("mayor-" + t).value = 1); actualizarArmador(); });
+$("curva-limpiar").addEventListener("click", () => { TALLES.forEach((t) => $("mayor-" + t).value = ""); actualizarArmador(); });
+$("armador").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const curva = leerCurva(), n = curva.reduce((s, c) => s + c.n, 0);
+  if (!n) { $("mayor-" + TALLES[0]).focus(); return; }
+  const [id, k] = selMayor.value.split("|"), p = buscar(id), v = p.variantes[+k];
+  curva.forEach((c) => { if (c.n) agregar(id, +k, c.t, c.n); });
+  carrito.mayor = true; guardar(); renderCarrito();
+  TALLES.forEach((t) => $("mayor-" + t).value = "");
+  actualizarArmador();
+  avisar(`Sumaste ${pares(n)} de ${nombreCompleto(p, v)}`);
+  $("mayor-ok-txt").textContent = `Sumaste ${pares(n)} de ${nombreCompleto(p, v)}`;
+  $("mayor-ok").hidden = false;
+});
+$("mayor-ver").addEventListener("click", abrirCarrito);
+
+/* =====================================================================
+   INICIO
+   ===================================================================== */
+grilla.innerHTML = PRODUCTOS.map(tarjeta).join("") +
+  `<p class="vacio" hidden>Todavía no hay modelos en esta colección. <a href="${wa(MENSAJES.general)}" target="_blank" rel="noopener">Preguntanos por WhatsApp</a>.</p>`;
+renderFiltros();
+aplicarFiltro();
+$("hero-cant").textContent = `${PRODUCTOS.length} modelos`;
+$("hero-foto").innerHTML = CONFIG.heroFoto
+  ? `<img src="${esc(CONFIG.heroFoto)}" alt="Alpargatas Tupa" width="800" height="800">`
+  : svgAlpargata({ tipo: "rayas", colores: ["#A8432A", "#F6EBD8", "#2F4A3A", "#F6EBD8"] }, "hero", "Ilustración de un par de alpargatas rayadas", true);
+$("cajas").innerHTML = TALLES.map((t) =>
+  `<li><a href="${wa(MENSAJES.cajaTalle(t))}" target="_blank" rel="noopener" aria-label="Consultar modelos en talle ${t}">${t}</a></li>`).join("");
+document.querySelectorAll("[data-wa]").forEach((a) => { a.href = wa(MENSAJES[a.dataset.wa] || MENSAJES.general); });
+$("anio").textContent = new Date().getFullYear();
+actualizarArmador();
+renderCarrito();
+</script>
+</body>
+</html>
